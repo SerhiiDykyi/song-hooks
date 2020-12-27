@@ -6,7 +6,6 @@ import './ArtistDetail.scss';
 
 export default function ArtistDetail() {
   const { name, tags, bio } = useSelector(songsSelectors.getArtistDetais);
-
   return (
     <>
       {name && (

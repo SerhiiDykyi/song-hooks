@@ -1,0 +1,18 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.ArtistDetailsPage__btn {
+  @include button();
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  color: $linkColor;
+  background-color: $navColor;
+  transition: 200ms linear;
+  &:hover,
+  :focus {
+    transition: 200ms linear;
+    background-color: $navActiveColor;
+  }
+}

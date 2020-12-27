@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { songsSelectors } from '../../redux/songs';
 import routes from '../../routes';
 import shortid from 'shortid';
@@ -8,6 +8,9 @@ import './SearchSongsList.scss';
 
 export default function SearchSongsList() {
   const searchSongs = useSelector(songsSelectors.getSearchSongs);
+  const history = useHistory();
+  const location = history.location.pathname;
+
   return (
     <>
       <ul className="SearchSongsList">
@@ -18,6 +21,9 @@ export default function SearchSongsList() {
               className="SearchSongsList__link"
               to={{
                 pathname: `${routes.artist}/${artist}`,
+                state: {
+                  from: location,
+                },
               }}
             >
               {artist}

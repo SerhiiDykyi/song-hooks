@@ -1,13 +1,15 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { songsSelectors } from '../../redux/songs';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import shortid from 'shortid';
 import routes from '../../routes';
 import './TopSongsList.scss';
 
-export default function TopSongsList({ location }) {
+export default function TopSongsList() {
   const topSongs = useSelector(songsSelectors.getTopSongs);
+  const history = useHistory();
+  const location = history.location.pathname;
 
   return (
     <>
