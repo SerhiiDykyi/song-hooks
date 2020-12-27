@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+.SearchIcon {
+  fill: $navColor;
+  &:hover,
+  :focus {
+    fill: $navActiveColor;
+  }
+}

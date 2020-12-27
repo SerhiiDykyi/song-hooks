@@ -1,0 +1,17 @@
+@import '../../styles/mixins.scss';
+
+.SearchSongsList__name {
+  @include name(18px);
+}
+
+.SearchSongsList {
+  @include list();
+}
+.SearchSongsList__link {
+  @include link();
+}
+
+.SearchSongsList__item {
+  border-radius: 20px;
+  @include item(5px);
+}

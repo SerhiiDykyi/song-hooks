@@ -1,0 +1,42 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.SearchSongsList__descr {
+  @include descr();
+}
+
+.SearchSongsList__form {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.SearchSongsList__input {
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: $inputShadow;
+  outline: none;
+  padding-left: 20px;
+  color: $inputColor;
+  font-size: 20px;
+  vertical-align: middle;
+  &::placeholder {
+    color: burlywood;
+  }
+}
+
+.Form__button {
+  @include button();
+  border-radius: 50px;
+  width: 42px;
+  height: 42px;
+  transition: 200ms linear;
+  &:hover,
+  :focus {
+    .SearchIcon {
+      transition: 200ms linear;
+      fill: $navActiveColor;
+    }
+  }
+}

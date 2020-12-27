@@ -1,0 +1,28 @@
+@import '../../styles/mixins.scss';
+
+.TopSongsList__descr {
+  @include descr();
+}
+
+.TopSongsList {
+  @include list();
+}
+
+.TopSongsList__item {
+  @include item(10px);
+}
+
+.TopSongsList__name {
+  @include name(22px);
+}
+.TopSongsList__artist {
+  @include artist();
+}
+
+.TopSongsList__img {
+  margin: 0 auto;
+}
+
+.TopSongsList__link {
+  @include link();
+}

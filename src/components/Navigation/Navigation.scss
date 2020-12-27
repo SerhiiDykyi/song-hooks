@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.Navigation {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  @media screen and (max-width: 360px) {
+    margin: 0 auto;
+  }
+}
+
+.NavLink {
+  font-size: 20px;
+  color: currentColor;
+  text-decoration: none;
+  color: $navColor;
+  font-family: 'Playfair Display', serif;
+}
+
+.NavLink--active {
+  color: $navActiveColor;
+}

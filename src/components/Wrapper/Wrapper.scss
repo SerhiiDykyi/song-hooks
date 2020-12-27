@@ -1,0 +1,21 @@
+.Wrapper {
+  width: 100%;
+  min-width: 320px;
+  padding: 10px 20px 50px 20px;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+  @media screen and (max-width: 360px) {
+    background-image: url(../../Images/music-x1.jpg);
+  }
+  @media (min-width: 361px) and (max-width: 719px) {
+    background-image: url(../../Images/music-x2.jpg);
+  }
+  @media (min-width: 720px) and (max-width: 1279px) {
+    background-image: url(../../Images/music-x3.jpg);
+  }
+  @media (min-width: 1280px) {
+    background-image: url(../../Images/music-x4.jpg);
+  }
+}
