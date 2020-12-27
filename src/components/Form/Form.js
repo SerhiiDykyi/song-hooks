@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { songsOperations } from '../../redux/songs';
 import './Form.scss';
 import SearchIcon from '../SearchIcon';
+import { emptyFormInfo } from '../ToasterInfo';
+import { ToastContainer } from 'react-toastify';
 
 export default function Form() {
   const [query, setQuery] = useState('');
@@ -13,6 +15,11 @@ export default function Form() {
 
   const handleSubmit = event => {
     event.preventDefault();
+
+    if (query === '') {
+      emptyFormInfo();
+      return;
+    }
 
     searchSongs(query);
 
@@ -27,6 +34,7 @@ export default function Form() {
 
   return (
     <>
+      <ToastContainer />
       <h2 className="SearchSongsList__descr">Find a song for yourself</h2>
       <form className="SearchSongsList__form" onSubmit={handleSubmit}>
         <input
