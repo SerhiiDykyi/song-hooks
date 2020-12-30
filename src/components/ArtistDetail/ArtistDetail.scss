@@ -24,7 +24,7 @@
 }
 
 .ArtistDetail__item {
-  @include name(14px);
+  @include name(14px, 15px);
 }
 
 .ArtistDetail__text {

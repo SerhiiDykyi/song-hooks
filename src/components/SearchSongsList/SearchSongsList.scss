@@ -1,7 +1,7 @@
 @import '../../styles/mixins.scss';
 
 .SearchSongsList__name {
-  @include name(18px);
+  @include name(18px, 15px);
 }
 
 .SearchSongsList {

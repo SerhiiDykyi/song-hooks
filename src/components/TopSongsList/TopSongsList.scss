@@ -13,7 +13,7 @@
 }
 
 .TopSongsList__name {
-  @include name(22px);
+  @include name(22px, 5px);
 }
 .TopSongsList__artist {
   @include artist();
@@ -21,6 +21,7 @@
 
 .TopSongsList__img {
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .TopSongsList__link {
