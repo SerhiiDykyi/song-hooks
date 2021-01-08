@@ -33,9 +33,9 @@
   padding: 10px;
   transition: 200ms linear;
   background-color: $itemBackgroundColor;
-  &:not(:last-child) {
-    margin-bottom: $marginBotttom;
-  }
+
+  margin-bottom: $marginBotttom;
+
   &:hover {
     transition: 200ms linear;
     box-shadow: 0 0 12px 12px rgba(82, 77, 34, 0.25);
@@ -52,10 +52,14 @@
   padding: 3px 5px;
   border-radius: 5px;
   align-self: flex-end;
-  transition: 200ms linear;
+  transition: 0.5s;
+  overflow: hidden;
+
   &:hover {
-    transition: 200ms linear;
-    box-shadow: 0 0 6px 6px rgba(82, 52, 34, 0.25);
+    background: $nameColor;
+    transition: 0.5s;
+    box-shadow: 0 0 5px$linkHover, 0 0 25px $linkHover, 0 0 50px $linkHover,
+      0 0 200px $linkHover;
   }
 }
 

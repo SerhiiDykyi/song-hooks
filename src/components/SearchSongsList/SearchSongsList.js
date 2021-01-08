@@ -26,6 +26,10 @@ export default function SearchSongsList() {
                 },
               }}
             >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
               {artist}
             </Link>
           </li>
